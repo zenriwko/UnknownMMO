@@ -1,0 +1,9 @@
+.features {
+  margin-top: 16px;
+  list-style: none;
+}
+
+
+.features li {
+  margin-bottom: 10px;
+}

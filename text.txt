@@ -1,0 +1,104 @@
+What is needed for game to be playable:
+
+
+Stage 1 (Testing and basics)[Pre-alpha]
+---
+Marketing
+Website showing progress with weekly blogs and basic seo focusing word (MMO).
+Youtube/Instagram/Facebook/TikTok shorts showcasing what has been built this week.
+Patreon - being able to support project with small amounts.
+
+Gameplay System
+Player will be able to move and use camera.
+Player will have HP bar shown visually.
+Player will spawn with sword being able to swing and deal dmg.
+
+Sounds
+basic attack sound / hit sound / walk sound / hitting sound based on object type
+
+Multiplayer System
+Just 1 server able to join anytime.
+Able to choose team (red and blue).
+Friendly fire off.
+Respawn option.
+
+World Creation
+Lowest texture available
+Layout of fortress from boxes.
+Materials focus which are scaled correctly.
+Collision
+
+(clear boundaries)
+
+Stage 2 (Core game)[Alpha]
+---
+Marketing
+Discord with closed alpha role and announcements.
+
+Map
+Have to create map which is viewable in game.
+
+Multiplayer > Focus <
+Closed alpha, people being able to join server when invited, opened once per week.
+Push boundaries of how many players can be on single map
+
+Gameplay
+Plan of Ability tree for 4? classes (Warrior, Mage, Archer, Priest)
+being able to level up to 10 and have 2 abilities which are impactful
+Inventory with armoury
+
+Animations
+Abilities should have visual clues
+Capturing should have visual clues
+Captured objective should have visual clues
+
+Sounds
+Everything should have sound
+
+Monsters/NPCs
+Fortress defended by elite monster/guard for capturing (priority)
+
+World Creation
+Have to create map which is competitive friendly
+Create safe starting zone for both teams, with middle map being battlefield.
+Fortresses designed with upgrades in mind and caravans with supplies.
+
+Mechanics
+Being able to capture and defend fortresses.
+Being able to upgrade fortresses.
+Special events based on server time
+Leaderboard showcasing achievements made in skirmish.
+
+
+Stage 3 (Whole system creation)[pre-Beta]
+
+Mechanics
+3 Nations which are fighting each other.
+Guild system which would implement Ranked system (special instanced battles)
+
+Gameplay
+Skill based learning curve for player with as unlimited potential as possible.
+Complete ability trees and planned classes.
+Meaningful battlefield and rewards.
+
+Crafting
+Being able to harvest/craft
+
+Make sure game is in playable state.
+
+Stage 4 (Playability)[Beta]
+
+Everything should be completed before launch
+
+Stage 5 ()[Launch]
+Monetisation - Game played as Free 2 Play in safe zones, but battlefield, dungeons, raids locked behind subscription model. (this will make it predictable for monthly payments)
+
+Sponsor tournaments based on subscription (Will massively increase player base)
+
+Marketing will need to be whole team.
+
+Archive stages and instead use patch notes.
+
+Mostly server optimisation, bug fixes and balance.
+
+Make it interesting by creating more modes, maps and different objectives which would rotate every 2nd week.

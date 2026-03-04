@@ -1,0 +1,334 @@
+/* ===== TREE VIEW (existing) ===== */
+
+.wrapper {
+  padding: 80px 24px;
+  background: #fff;
+  color: #000;
+  font-family: monospace;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width:90%;
+  margin: 0 auto;
+}
+
+.stageBlock {
+  border: 1px solid #000;
+  padding: 18px;
+}
+
+.branch {
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.arrow {
+  margin: 8px 0;
+  opacity: 0.8;
+}
+
+.inlineRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.inlineItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sep {
+  opacity: 0.6;
+}
+
+/* Clickable nodes */
+.node {
+  border: 1px solid #000;
+  background: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.node:hover {
+  background: #000;
+  color: #fff;
+}
+
+.nodeStage {
+  font-weight: 900;
+}
+
+.nodeCategory {
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+.nodeTask {
+  opacity: 0.9;
+}
+
+/* Completed state */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ===== FULLSCREEN MODAL ===== */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 18px 18px 10px;
+  border-bottom: 1px solid #000;
+}
+
+.modalKind {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.modalName {
+  width: min(900px, 100%);
+  font-size: 1.6rem;
+  font-weight: 900;
+  border: 1px solid #000;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.closeBtn {
+  border: 1px solid #000;
+  background: #fff;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.modalBody {
+  padding: 18px;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.fieldLabel {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.textarea {
+  width: min(900px, 100%);
+  min-height: 220px;
+  border: 1px solid #000;
+  padding: 12px;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+}
+
+.modalBottom {
+  position: relative;
+  border-top: 1px solid #000;
+  padding: 16px 18px;
+  min-height: 84px;
+}
+
+/* bottom-left big save */
+.saveBtn {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  padding: 14px 18px;
+  border: 2px solid #000;
+  background: #000;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.saveBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* bottom-right mark complete */
+.completeBtn {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  padding: 12px 16px;
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.completeBtn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.completeOn {
+  background: #000;
+  color: #fff;
+}
+
+/* ===== UNSAVED CHANGES CONFIRM ===== */
+
+
+.confirmOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+
+.confirmBox {
+  width: min(520px, calc(100% - 32px));
+  border: 2px solid #000;
+  background: #fff;
+  padding: 18px;
+}
+
+
+.confirmTitle {
+  font-weight: 900;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+
+.confirmText {
+  opacity: 0.9;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+
+.confirmActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+
+.confirmActions button {
+  border: 2px solid #000;
+  background: #fff;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.confirmSave:hover,
+.confirmDiscard:hover,
+.confirmCancel:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Top tools row INSIDE layout */
+.inlineTools {
+  width: 90%;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+
+.toolBtn {
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+.toolBtn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #000;
+  padding: 10px 12px;
+  background: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+.toggle input {
+  accent-color: #000;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 56px 16px;
+  }
+  .modalName {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,21 @@
+.section {
+  padding: 80px 24px;
+
+}
+
+
+.list {
+
+  padding: 0;
+  margin-top: 32px;
+  display: grid;
+  gap: 14px;
+  max-width: 520px;
+
+}
+
+
+.list li {
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
